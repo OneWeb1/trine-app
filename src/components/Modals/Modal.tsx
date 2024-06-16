@@ -41,6 +41,9 @@ const Modal: FC<ModalProps> = ({ open, setOpen }) => {
 					open && !isHideAnimation ? styles.show : styles.hide
 				}`}>
 				<div className={styles.title}>
+					<div className={styles.titleBg}>
+						<img src='/assets/modal/modal-title.svg' alt='bg' />
+					</div>
 					<span>Список друзей</span>
 					<button className={styles.buttonClose} onClick={close}></button>
 				</div>
