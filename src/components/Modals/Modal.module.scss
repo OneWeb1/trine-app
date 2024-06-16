@@ -19,6 +19,7 @@
 		height: 500px;
 		display: flex;
 		flex-direction: column;
+		transition: transform 0.1s;
 
 		.title {
 			position: relative;
@@ -78,12 +79,12 @@
 
 @keyframes show {
 	0% {
-		transform: scale(0.9);
+		transform: scale(0.1);
 	}
 
 	50% {
 		opacity: 1;
-		transform: scale(1.05);
+		transform: scale(1.15);
 	}
 
 	100% {
@@ -97,8 +98,11 @@
 		transform: scale(1);
 	}
 
+	50% {
+	}
+
 	100% {
-		transform: scale(0.7);
-		opacity: 0;
+		transform: scale(0.8);
+		// opacity: 0;
 	}
 }
